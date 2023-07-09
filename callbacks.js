@@ -1,6 +1,7 @@
 const posts=[
     {title:'post One1', body:'This is post one'},
-    {title:'post One', body:'This is post one'}
+    {title:'post One', body:'This is post one'},
+    {title:'post Three', body:'This is post three'}
 ];
 
 function getPosts(){
@@ -21,4 +22,4 @@ function createPost(post){
 
 getPosts();
 
-createPost({title:'post Three', body:'This is post three'});
+createPost({title:'post Four', body:'This is post four'});
