@@ -37,7 +37,7 @@ function createPost(post){
 // // .catch(err=>console.log(err));
 
 async function init(){
-    createPost({title:'post Five', body:'This is post five'});
+    await createPost({title:'post Five', body:'This is post five'});
 
     getPosts();
 }
