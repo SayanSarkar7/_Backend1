@@ -36,21 +36,22 @@ function createPost(post){
 // // .then(getPosts)
 // // .catch(err=>console.log(err));
 
-async function init(){
-    await createPost({title:'post Five', body:'This is post five'});
+// async function init(){
+//     await createPost({title:'post Five', body:'This is post five'});
 
-    getPosts();
+//     getPosts();
+// }
+
+// init();
+
+// Async / await/ Fetch
+async function fetchUsers() {
+    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const data = await res.json();
+    console.log(data);
 }
 
-init();
-
-
-
-
-
-
-
-
+fetchUsers();
 
 // // Promise.all
 // const promise1 = Promise.resolve('Hello World');
